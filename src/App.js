@@ -12,22 +12,23 @@ import "./App.css";
 function App() {
   return (
     <>
-      <div className="center-items">
-        <Headerthing />
-        <Router>
-          <Navbar />
-          <Switch>
-            <Route exact path="/">
-              <Home />
-            </Route>
-            <Route exact path="/about">
-              <About />
-            </Route>
-            <Route exact path="/misc">
-              <Misc />
-            </Route>
-          </Switch>
-        </Router>
+      <div className="site-wrapper">
+
+        <div className= "sidebar" />
+
+        <div className="center-wrapper">
+
+          <Headerthing />
+          <Router>
+              <Navbar />
+                <Switch>
+                  <Route exact path="/" component={Home} />
+                  <Route exact path="/about" component={About} />
+                  <Route exact path="/misc" component={Misc} />
+                </Switch>
+          </Router>
+        </div>
+        <div className= "sidebar" />
       </div>
     </>
   );
