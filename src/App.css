@@ -1,0 +1,10 @@
+.center-items{
+  width:70%;
+  align-self:center  
+}
+
+.center-wrapper{
+  display: flex;
+  width:100%;
+  justify-content:center;
+}

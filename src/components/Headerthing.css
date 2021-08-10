@@ -1,0 +1,9 @@
+.header-container {
+  display:flex;
+  justify-content:center;
+  border: 2px solid black
+}
+
+.header-text{
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
